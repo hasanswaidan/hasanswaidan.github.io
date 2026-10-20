@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hasan Swaidan – IT Specialist | Networking, Systems & Infrastructure</title>
+<meta name="description" content="Portfolio of Hasan Swaidan, IT specialist in Tyre, Lebanon: network infrastructure, systems administration, MikroTik and Ubiquiti installations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+:root{color-scheme:dark;--bg:#000;--surface:#0e0e0e;--line:#2a2a2a;--text:#f5f5f5;--muted:#a3a3a3;--accent:#e8212f;--accent-ink:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;min-height:100%;background:radial-gradient(900px 460px at 18% -120px,rgba(232,33,47,.16),transparent 70%) no-repeat,var(--bg);color:var(--text);font:400 17px/1.65 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+html[lang=ar] body{font-family:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;line-height:1.85}
+html[lang=ar] .en,html[lang=en] .ar{display:none!important}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin-inline:auto;padding-inline:24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(0,0,0,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:rgba(0,0,0,.92);z-index:30}
+nav{display:flex;align-items:center;gap:20px;height:64px}
+.logo{font-weight:600;text-decoration:none;font-size:18px;margin-inline-end:auto}
+nav a.l{color:var(--muted);text-decoration:none;font-size:15px}
+nav a.l:hover{color:var(--text)}
+.lang{font:inherit;font-size:14px;color:var(--text);background:none;border:1px solid var(--line);border-radius:999px;padding:5px 14px;cursor:pointer}
+.lang:hover{border-color:var(--accent)}
+.hero{display:block;padding-block:88px 64px}
+.who{display:flex;align-items:center;gap:14px;margin-bottom:22px;color:var(--muted);font-size:15px}
+.av{width:64px;height:64px;border-radius:50%;background:var(--surface);border:2px solid var(--accent);display:grid;place-items:center;font-weight:600;color:var(--accent);overflow:hidden}
+.av img{width:100%;height:100%;object-fit:cover}
+h1{font-size:clamp(40px,7vw,72px);line-height:1.08;margin:0 0 16px;font-weight:600;letter-spacing:-.02em}
+html[lang=ar] h1{letter-spacing:0;line-height:1.25}
+.role{font-size:20px;color:var(--text);margin:0 0 14px}
+.lead{color:var(--muted);max-width:52ch;margin:0 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:500;border:1px solid var(--line)}
+.btn.p{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn:hover{border-color:var(--accent)}
+.btn.p:hover{filter:brightness(1.08)}
+figure{margin:0}
+figcaption{color:var(--muted);font-size:14px;margin-top:10px;text-align:center}
+svg{width:100%;height:auto;display:block}
+.ln{stroke:var(--accent);stroke-width:1.5;fill:none;opacity:.7;stroke-dasharray:140;stroke-dashoffset:140;animation:draw 1.4s ease-out .2s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.nd{fill:var(--surface);stroke:var(--accent);stroke-width:1.5}
+.rm{fill:var(--accent)}
+.sv text{fill:var(--text);font:500 12px "IBM Plex Sans","IBM Plex Sans Arabic",sans-serif}
+section{padding-block:72px;border-top:1px solid var(--line)}
+h2{font-size:28px;margin:0 0 28px;font-weight:600;letter-spacing:-.01em}
+html[lang=ar] h2{letter-spacing:0}
+h3{font-size:19px;margin:0 0 6px;font-weight:600}
+p{margin:0 0 12px}
+.muted{color:var(--muted)}
+.about{max-width:62ch}
+.svc{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.svc div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;transition:border-color .2s}.svc div:hover{border-color:var(--accent)}
+.svc p{color:var(--muted);margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.chip{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 14px;font-size:15px}
+.grp{margin-bottom:22px}
+.job{display:grid;grid-template-columns:200px 1fr;gap:8px 32px;padding:22px 0;border-top:1px solid var(--line)}
+.job:first-of-type{border-top:0;padding-top:0}
+.job .d{color:var(--accent);font-weight:500;font-size:15px}
+ul{margin:10px 0 0;padding-inline-start:20px}
+li{margin-bottom:6px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:30px;margin-bottom:20px}
+.proj.big{border-inline-start:3px solid var(--accent)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tags span{color:var(--accent);font-size:14px;border:1px solid var(--line);border-radius:6px;padding:2px 10px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.cert{padding:12px 0;border-top:1px solid var(--line)}
+.cert:first-of-type{border-top:0;padding-top:0}
+.contact a.row{display:flex;gap:16px;padding:14px 0;border-top:1px solid var(--line);text-decoration:none;align-items:baseline}
+.contact a.row:hover b{color:var(--accent)}
+.contact b{font-weight:500}
+.contact .k{color:var(--muted);min-width:96px}
+.who b{display:block;color:var(--text);font-weight:500}.cta{background:var(--accent);color:var(--accent-ink);padding:8px 18px;border-radius:8px;text-decoration:none;font-size:15px;font-weight:500}.cta:hover{filter:brightness(1.1)}.stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:72px}.stats div{padding:24px;border-inline-start:1px solid var(--line)}.stats div:first-child{border-inline-start:0}.stats b{display:block;font-size:32px;font-weight:600;line-height:1.2}.stats span{color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);padding-block:28px;color:var(--muted);font-size:14px}
+@media(max-width:820px){.hero{grid-template-columns:1fr;padding-block:48px 40px;gap:36px}.svc,.two{grid-template-columns:1fr}.two{gap:0}.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(3){border-inline-start:0}.stats div:nth-child(n+3){border-top:1px solid var(--line)}.job{grid-template-columns:1fr}nav a.l{display:none}.two>div+div{margin-top:40px}}
+@media(prefers-reduced-motion:reduce){.ln{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#top"><span class="en">Hasan Swaidan</span><span class="ar">حسن سويدان</span></a>
+<a class="l" href="#services"><span class="en">Services</span><span class="ar">الخدمات</span></a>
+<a class="l" href="#experience"><span class="en">Experience</span><span class="ar">الخبرة</span></a>
+<a class="l" href="#projects"><span class="en">Projects</span><span class="ar">المشاريع</span></a>
+<a class="cta" href="#contact"><span class="en">Hire me</span><span class="ar">وظّفني</span></a>
+<button class="lang" id="lang" type="button" aria-label="Switch language / تغيير اللغة">عربي</button>
+</nav></div></header>
+
+<main id="top">
+<div class="wrap hero">
+<div>
+<div class="who"><div class="av" id="avatar"><img src="data:image/jpeg;base64,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" width="200" height="200" alt="Hasan Swaidan"></div><span><b class="en">Open to work</b><b class="ar">متاح للعمل</b><span class="en">Tyre, Lebanon</span><span class="ar">صور، لبنان</span></span></div>
+<h1><span class="en">Hasan Swaidan</span><span class="ar">حسن سويدان</span></h1>
+<p class="role"><span class="en">IT Specialist: networking, systems and infrastructure</span><span class="ar">أخصائي تكنولوجيا المعلومات: الشبكات والأنظمة والبنية التحتية</span></p>
+<p class="lead"><span class="en">I plan, install and run reliable networks and IT systems, from structured cabling and switching to MikroTik routers and wireless links. Available for full-time roles and freelance projects.</span><span class="ar">أخطط وأركّب وأدير شبكات وأنظمة تقنية موثوقة، من الكابلات المهيكلة والسويتشات إلى راوترات ميكروتك والوصلات اللاسلكية. متاح للعمل بدوام كامل وللمشاريع الحرة.</span></p>
+<div class="btns">
+<a class="btn p" href="#contact"><span class="en">Get in touch</span><span class="ar">تواصل معي</span></a>
+<a class="btn" href="https://www.linkedin.com/in/hasan-swaidan-a52503248" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</div>
+</div>
+
+<div class="wrap"><div class="stats">
+<div><b>2+</b><span><span class="en">years of experience</span><span class="ar">سنوات من الخبرة</span></span></div>
+<div><b>100+</b><span><span class="en">employees served</span><span class="ar">موظف على أنظمتي</span></span></div>
+<div><b>95%</b><span><span class="en">first-contact resolution</span><span class="ar">حل من أول اتصال</span></span></div>
+<div><b>CCNA</b><span><span class="en">Cisco certified</span><span class="ar">معتمد من Cisco</span></span></div>
+</div></div>
+<section id="about"><div class="wrap about">
+<h2><span class="en">About</span><span class="ar">نبذة</span></h2>
+<p><span class="en">I hold a B.Sc. in Information Technology and a CCNA, with 2+ years of experience in network infrastructure, systems administration and technical operations. I have worked in education and with ISP customers, and I also build my own software tools.</span><span class="ar">حاصل على بكالوريوس في تكنولوجيا المعلومات وشهادة CCNA، بخبرة تتجاوز سنتين في البنية التحتية للشبكات وإدارة الأنظمة والعمليات التقنية. عملت في القطاع التعليمي ومع عملاء مزودي خدمة الإنترنت، وأطوّر أيضًا أدواتي البرمجية الخاصة.</span></p>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2><span class="en">What I can do for you</span><span class="ar">ما الذي أقدمه لك</span></h2>
+<div class="svc">
+<div><h3><span class="en">Network design and installation</span><span class="ar">تصميم الشبكات وتركيبها</span></h3><p><span class="en">Planning, switching, racks and structured cabling for schools, offices and buildings.</span><span class="ar">تخطيط وسويتشات وخزائن وكابلات مهيكلة للمدارس والمكاتب والمباني.</span></p></div>
+<div><h3><span class="en">Internet and wireless links</span><span class="ar">الإنترنت والوصلات اللاسلكية</span></h3><p><span class="en">MikroTik routers, PPPoE and Ubiquiti PowerBeam links, configured at the customer site.</span><span class="ar">راوترات ميكروتك وPPPoE ووصلات Ubiquiti PowerBeam، تُضبط في موقع العميل.</span></p></div>
+<div><h3><span class="en">Systems setup and administration</span><span class="ar">إعداد الأنظمة وإدارتها</span></h3><p><span class="en">Workstations, software and network systems deployed, monitored and kept healthy.</span><span class="ar">أجهزة وبرامج وأنظمة شبكية يتم تجهيزها ومراقبتها والحفاظ على سلامتها.</span></p></div>
+<div><h3><span class="en">Troubleshooting and upkeep</span><span class="ar">حل المشكلات والصيانة</span></h3><p><span class="en">Fast diagnosis of connectivity, signal and hardware problems, on-site or remote.</span><span class="ar">تشخيص سريع لمشاكل الاتصال والإشارة والعتاد، في الموقع أو عن بعد.</span></p></div>
+</div></div></section>
+
+<section><div class="wrap">
+<h2><span class="en">Skills</span><span class="ar">المهارات</span></h2>
+<div class="grp"><b><span class="en">Networking</span><span class="ar">الشبكات</span></b><div class="chips"><span class="chip">Cisco</span><span class="chip">MikroTik</span><span class="chip">PPPoE</span><span class="chip">Ubiquiti / PowerBeam</span><span class="chip"><span class="en">Structured cabling</span><span class="ar">كابلات مهيكلة</span></span></div></div>
+<div class="grp"><b><span class="en">Systems and security</span><span class="ar">الأنظمة والأمن</span></b><div class="chips"><span class="chip"><span class="en">System administration</span><span class="ar">إدارة الأنظمة</span></span><span class="chip"><span class="en">Performance monitoring</span><span class="ar">مراقبة الأداء</span></span><span class="chip"><span class="en">Network security</span><span class="ar">أمن الشبكات</span></span><span class="chip"><span class="en">PC building</span><span class="ar">تجميع الحواسيب</span></span></div></div>
+<div class="grp"><b><span class="en">Software</span><span class="ar">البرمجة</span></b><div class="chips"><span class="chip">Ollama</span><span class="chip">FullCalendar</span><span class="chip">Web Speech API</span><span class="chip"><span class="en">Documentation and user training</span><span class="ar">التوثيق وتدريب المستخدمين</span></span></div></div>
+<p class="muted"><span class="en">Languages: Arabic (fluent), English (fluent)</span><span class="ar">اللغات: العربية (بطلاقة)، الإنجليزية (بطلاقة)</span></p>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2><span class="en">Experience</span><span class="ar">الخبرة العملية</span></h2>
+<div class="job"><div class="d">2024 – 2026</div><div>
+<h3><span class="en">IT Technician, Smart College</span><span class="ar">فني تكنولوجيا المعلومات، Smart College</span></h3><div class="muted"><span class="en">Tyre, Lebanon</span><span class="ar">صور، لبنان</span></div>
+<ul><li><span class="en">Managed IT systems and the end-user environment for 100+ employees, resolving 95% of issues on first contact.</span><span class="ar">أدرت الأنظمة وبيئة المستخدمين لأكثر من 100 موظف، وحللت 95% من المشكلات من أول اتصال.</span></li>
+<li><span class="en">Deployed, configured and administered workstations, software and network systems.</span><span class="ar">جهّزت وضبطت وأدرت أجهزة وبرامج وأنظمة شبكية.</span></li>
+<li><span class="en">Worked with other teams to improve IT processes, reducing downtime by 15%.</span><span class="ar">عملت مع فرق أخرى لتحسين العمليات التقنية، فانخفض زمن التوقف بنسبة 15%.</span></li>
+<li><span class="en">Helped roll out new systems and trained staff to adopt them.</span><span class="ar">ساهمت في إطلاق أنظمة جديدة وتدريب الموظفين عليها.</span></li></ul></div></div>
+<div class="job"><div class="d"><span class="en">2026, 5 months</span><span class="ar">2026، خمسة أشهر</span></div><div>
+<h3><span class="en">Internet Technician</span><span class="ar">فني إنترنت</span></h3><div class="muted"><span class="en">Lebanon</span><span class="ar">لبنان</span></div>
+<ul><li><span class="en">Installed, configured and maintained internet and network equipment at customer sites.</span><span class="ar">ركّبت وضبطت وصنت معدات الإنترنت والشبكات في مواقع العملاء.</span></li>
+<li><span class="en">Deployed MikroTik routers and configured PPPoE and Ubiquiti / PowerBeam wireless links.</span><span class="ar">نشرت راوترات ميكروتك وضبطت PPPoE ووصلات Ubiquiti / PowerBeam اللاسلكية.</span></li>
+<li><span class="en">Diagnosed and fixed connectivity, signal and network issues on-site.</span><span class="ar">شخّصت وأصلحت مشاكل الاتصال والإشارة والشبكة في الموقع.</span></li></ul></div></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2><span class="en">Projects</span><span class="ar">المشاريع</span></h2>
+<div class="proj big"><h3><span class="en">Smart College network renovation</span><span class="ar">تجديد شبكة Smart College</span></h3>
+<p><span class="en">I led the full renovation of the college network, from planning to final cleanup. It covered three buildings, with switches serving the rooms in each one and every building linked back to the server room.</span><span class="ar">قدت تجديد شبكة الكلية بالكامل، من التخطيط حتى التنظيف النهائي. شمل المشروع ثلاثة مبانٍ، مع سويتشات تخدم الغرف في كل مبنى، وربط كل مبنى بغرفة الخوادم.</span></p>
+<ul><li><span class="en">Network planning and deployment, switch installation and configuration</span><span class="ar">تخطيط الشبكة ونشرها، وتركيب السويتشات وضبطها</span></li>
+<li><span class="en">Rack and cabinet installation, structured cabling, cable labeling and management</span><span class="ar">تركيب الخزائن، والكابلات المهيكلة، وترقيم الكابلات وتنظيمها</span></li>
+<li><span class="en">Equipment organization and overall infrastructure optimization</span><span class="ar">تنظيم المعدات وتحسين البنية التحتية بشكل عام</span></li></ul>
+<div class="tags"><span>Cisco</span><span><span class="en">Switching</span><span class="ar">سويتشات</span></span><span><span class="en">Structured cabling</span><span class="ar">كابلات مهيكلة</span></span></div></div>
+<div class="proj"><h3><span class="en">Local AI assistant</span><span class="ar">مساعد ذكاء اصطناعي محلي</span></h3>
+<p><span class="en">A secure, authenticated productivity app that runs a local language model, schedules tasks on a calendar and responds to voice commands hands-free.</span><span class="ar">تطبيق إنتاجية آمن بنظام تسجيل دخول، يشغّل نموذج لغة محليًا، ويجدول المهام على تقويم، ويستجيب للأوامر الصوتية دون استخدام اليدين.</span></p>
+<div class="tags"><span>Ollama</span><span>FullCalendar</span><span>Web Speech API</span></div></div>
+</div></section>
+
+<section><div class="wrap two">
+<div><h2><span class="en">Certifications</span><span class="ar">الشهادات</span></h2>
+<div class="cert">Cisco Certified Network Associate (CCNA)</div><div class="cert">CyberOps Associate</div><div class="cert">Network Security Fundamentals</div>
+<p class="muted" style="margin-top:12px">Cisco Networking Academy</p></div>
+<div><h2><span class="en">Education</span><span class="ar">التعليم</span></h2>
+<h3><span class="en">B.Sc. in Information Technology</span><span class="ar">بكالوريوس في تكنولوجيا المعلومات</span></h3>
+<p class="muted"><span class="en">Lebanese International University (LIU), Tyre. Graduated 2025.</span><span class="ar">الجامعة اللبنانية الدولية (LIU)، صور. تخرجت عام 2025.</span></p></div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+<h2><span class="en">Let’s work together</span><span class="ar">لنعمل معًا</span></h2>
+<p class="muted" style="max-width:56ch"><span class="en">Hiring for an IT role, or need a network installed or fixed? Send me a message and I will reply as soon as I can.</span><span class="ar">تبحث عن موظف تقنية، أو تحتاج إلى تركيب شبكة أو إصلاحها؟ راسلني وسأرد في أقرب وقت.</span></p>
+<div style="margin-top:20px">
+<a class="row" href="mailto:hswaidan02@gmail.com"><span class="k"><span class="en">Email</span><span class="ar">البريد</span></span><b>hswaidan02@gmail.com</b></a>
+<a class="row" href="tel:+96181979231"><span class="k"><span class="en">Phone</span><span class="ar">الهاتف</span></span><b dir="ltr">+961 81 979 231</b></a>
+<a class="row" href="https://www.linkedin.com/in/hasan-swaidan-a52503248" target="_blank" rel="noopener"><span class="k">LinkedIn</span><b>hasan-swaidan</b></a>
+</div></div></section>
+</main>
+<footer><div class="wrap"><span class="en">© 2026 Hasan Swaidan · Tyre, Lebanon</span><span class="ar">© 2026 حسن سويدان · صور، لبنان</span></div></footer>
+
+<script>
+(function(){
+var root=document.documentElement,btn=document.getElementById('lang');
+function setLang(l){
+root.lang=l;root.dir=l==='ar'?'rtl':'ltr';
+btn.textContent=l==='ar'?'English':'عربي';
+document.title=l==='ar'?'حسن سويدان – أخصائي تكنولوجيا المعلومات':'Hasan Swaidan – IT Specialist | Networking, Systems & Infrastructure';
+try{localStorage.setItem('lang',l)}catch(e){}
+}
+var l='en';try{l=localStorage.getItem('lang')||'en'}catch(e){}
+setLang(l==='ar'?'ar':'en');
+btn.addEventListener('click',function(){setLang(root.lang==='ar'?'en':'ar')});
+})();
+</script>
+</body>
+</html>
