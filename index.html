@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hasan Swaidan – IT Specialist | Networking, Systems & Infrastructure</title>
+<meta name="description" content="Portfolio of Hasan Swaidan, IT specialist in Tyre, Lebanon: network infrastructure, systems administration, MikroTik and Ubiquiti installations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+:root{color-scheme:dark;--bg:#000;--surface:#0e0e0e;--line:#2a2a2a;--text:#f5f5f5;--muted:#a3a3a3;--accent:#e8212f;--accent-ink:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font:400 17px/1.65 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+html[lang=ar] body{font-family:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;line-height:1.85}
+html[lang=ar] .en,html[lang=en] .ar{display:none!important}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin-inline:auto;padding-inline:24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(0,0,0,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:rgba(0,0,0,.92);z-index:30}
+nav{display:flex;align-items:center;gap:20px;height:64px}
+.logo{font-weight:600;text-decoration:none;font-size:18px;margin-inline-end:auto}
+nav a.l{color:var(--muted);text-decoration:none;font-size:15px}
+nav a.l:hover{color:var(--text)}
+.lang{font:inherit;font-size:14px;color:var(--text);background:none;border:1px solid var(--line);border-radius:999px;padding:5px 14px;cursor:pointer}
+.lang:hover{border-color:var(--accent)}
+.hero{display:block;padding-block:88px 64px}
+.who{display:flex;align-items:center;gap:14px;margin-bottom:22px;color:var(--muted);font-size:15px}
+.av{width:56px;height:56px;border-radius:50%;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;font-weight:600;color:var(--accent);overflow:hidden}
+.av img{width:100%;height:100%;object-fit:cover}
+h1{font-size:clamp(38px,6vw,60px);line-height:1.08;margin:0 0 16px;font-weight:600;letter-spacing:-.02em}
+html[lang=ar] h1{letter-spacing:0;line-height:1.25}
+.role{font-size:20px;color:var(--text);margin:0 0 14px}
+.lead{color:var(--muted);max-width:52ch;margin:0 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:500;border:1px solid var(--line)}
+.btn.p{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn:hover{border-color:var(--accent)}
+.btn.p:hover{filter:brightness(1.08)}
+figure{margin:0}
+figcaption{color:var(--muted);font-size:14px;margin-top:10px;text-align:center}
+svg{width:100%;height:auto;display:block}
+.ln{stroke:var(--accent);stroke-width:1.5;fill:none;opacity:.7;stroke-dasharray:140;stroke-dashoffset:140;animation:draw 1.4s ease-out .2s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.nd{fill:var(--surface);stroke:var(--accent);stroke-width:1.5}
+.rm{fill:var(--accent)}
+.sv text{fill:var(--text);font:500 12px "IBM Plex Sans","IBM Plex Sans Arabic",sans-serif}
+section{padding-block:56px;border-top:1px solid var(--line)}
+h2{font-size:28px;margin:0 0 28px;font-weight:600;letter-spacing:-.01em}
+html[lang=ar] h2{letter-spacing:0}
+h3{font-size:19px;margin:0 0 6px;font-weight:600}
+p{margin:0 0 12px}
+.muted{color:var(--muted)}
+.about{max-width:62ch}
+.svc{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px}
+.svc div{border-top:1px solid var(--line);padding:18px 0 22px}
+.svc p{color:var(--muted);margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.chip{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 14px;font-size:15px}
+.grp{margin-bottom:22px}
+.job{display:grid;grid-template-columns:200px 1fr;gap:8px 32px;padding:22px 0;border-top:1px solid var(--line)}
+.job:first-of-type{border-top:0;padding-top:0}
+.job .d{color:var(--muted);font-size:15px}
+ul{margin:10px 0 0;padding-inline-start:20px}
+li{margin-bottom:6px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:30px;margin-bottom:20px}
+.proj.big{border-inline-start:3px solid var(--accent)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tags span{color:var(--accent);font-size:14px;border:1px solid var(--line);border-radius:6px;padding:2px 10px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.cert{padding:12px 0;border-top:1px solid var(--line)}
+.cert:first-of-type{border-top:0;padding-top:0}
+.contact a.row{display:flex;gap:16px;padding:14px 0;border-top:1px solid var(--line);text-decoration:none;align-items:baseline}
+.contact a.row:hover b{color:var(--accent)}
+.contact b{font-weight:500}
+.contact .k{color:var(--muted);min-width:96px}
+footer{border-top:1px solid var(--line);padding-block:28px;color:var(--muted);font-size:14px}
+@media(max-width:820px){.hero{grid-template-columns:1fr;padding-block:48px 40px;gap:36px}.svc,.two{grid-template-columns:1fr;gap:0}.job{grid-template-columns:1fr}nav a.l{display:none}.two>div+div{margin-top:40px}}
+@media(prefers-reduced-motion:reduce){.ln{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#top"><span class="en">Hasan Swaidan</span><span class="ar">حسن سويدان</span></a>
+<a class="l" href="#services"><span class="en">Services</span><span class="ar">الخدمات</span></a>
+<a class="l" href="#experience"><span class="en">Experience</span><span class="ar">الخبرة</span></a>
+<a class="l" href="#projects"><span class="en">Projects</span><span class="ar">المشاريع</span></a>
+<a class="l" href="#contact"><span class="en">Contact</span><span class="ar">تواصل</span></a>
+<button class="lang" id="lang" type="button" aria-label="Switch language / تغيير اللغة">عربي</button>
+</nav></div></header>
+
+<main id="top">
+<div class="wrap hero">
+<div>
+<div class="who"><div class="av" id="avatar">HS</div><span><span class="en">Tyre, Lebanon</span><span class="ar">صور، لبنان</span></span></div>
+<h1><span class="en">Hasan Swaidan</span><span class="ar">حسن سويدان</span></h1>
+<p class="role"><span class="en">IT Specialist: networking, systems and infrastructure</span><span class="ar">أخصائي تكنولوجيا المعلومات: الشبكات والأنظمة والبنية التحتية</span></p>
+<p class="lead"><span class="en">I plan, install and run reliable networks and IT systems, from structured cabling and switching to MikroTik routers and wireless links. Available for full-time roles and freelance projects.</span><span class="ar">أخطط وأركّب وأدير شبكات وأنظمة تقنية موثوقة، من الكابلات المهيكلة والسويتشات إلى راوترات ميكروتك والوصلات اللاسلكية. متاح للعمل بدوام كامل وللمشاريع الحرة.</span></p>
+<div class="btns">
+<a class="btn p" href="#contact"><span class="en">Get in touch</span><span class="ar">تواصل معي</span></a>
+<a class="btn" href="https://www.linkedin.com/in/hasan-swaidan-a52503248" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</div>
+</div>
+
+<section id="about"><div class="wrap about">
+<h2><span class="en">About</span><span class="ar">نبذة</span></h2>
+<p><span class="en">I hold a B.Sc. in Information Technology and a CCNA, with 2+ years of experience in network infrastructure, systems administration and technical operations. I have worked in education and with ISP customers, and I also build my own software tools.</span><span class="ar">حاصل على بكالوريوس في تكنولوجيا المعلومات وشهادة CCNA، بخبرة تتجاوز سنتين في البنية التحتية للشبكات وإدارة الأنظمة والعمليات التقنية. عملت في القطاع التعليمي ومع عملاء مزودي خدمة الإنترنت، وأطوّر أيضًا أدواتي البرمجية الخاصة.</span></p>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2><span class="en">What I can do for you</span><span class="ar">ما الذي أقدمه لك</span></h2>
+<div class="svc">
+<div><h3><span class="en">Network design and installation</span><span class="ar">تصميم الشبكات وتركيبها</span></h3><p><span class="en">Planning, switching, racks and structured cabling for schools, offices and buildings.</span><span class="ar">تخطيط وسويتشات وخزائن وكابلات مهيكلة للمدارس والمكاتب والمباني.</span></p></div>
+<div><h3><span class="en">Internet and wireless links</span><span class="ar">الإنترنت والوصلات اللاسلكية</span></h3><p><span class="en">MikroTik routers, PPPoE and Ubiquiti PowerBeam links, configured at the customer site.</span><span class="ar">راوترات ميكروتك وPPPoE ووصلات Ubiquiti PowerBeam، تُضبط في موقع العميل.</span></p></div>
+<div><h3><span class="en">Systems setup and administration</span><span class="ar">إعداد الأنظمة وإدارتها</span></h3><p><span class="en">Workstations, software and network systems deployed, monitored and kept healthy.</span><span class="ar">أجهزة وبرامج وأنظمة شبكية يتم تجهيزها ومراقبتها والحفاظ على سلامتها.</span></p></div>
+<div><h3><span class="en">Troubleshooting and upkeep</span><span class="ar">حل المشكلات والصيانة</span></h3><p><span class="en">Fast diagnosis of connectivity, signal and hardware problems, on-site or remote.</span><span class="ar">تشخيص سريع لمشاكل الاتصال والإشارة والعتاد، في الموقع أو عن بعد.</span></p></div>
+</div></div></section>
+
+<section><div class="wrap">
+<h2><span class="en">Skills</span><span class="ar">المهارات</span></h2>
+<div class="grp"><b><span class="en">Networking</span><span class="ar">الشبكات</span></b><div class="chips"><span class="chip">Cisco</span><span class="chip">MikroTik</span><span class="chip">PPPoE</span><span class="chip">Ubiquiti / PowerBeam</span><span class="chip"><span class="en">Structured cabling</span><span class="ar">كابلات مهيكلة</span></span></div></div>
+<div class="grp"><b><span class="en">Systems and security</span><span class="ar">الأنظمة والأمن</span></b><div class="chips"><span class="chip"><span class="en">System administration</span><span class="ar">إدارة الأنظمة</span></span><span class="chip"><span class="en">Performance monitoring</span><span class="ar">مراقبة الأداء</span></span><span class="chip"><span class="en">Network security</span><span class="ar">أمن الشبكات</span></span><span class="chip"><span class="en">PC building</span><span class="ar">تجميع الحواسيب</span></span></div></div>
+<div class="grp"><b><span class="en">Software</span><span class="ar">البرمجة</span></b><div class="chips"><span class="chip">Ollama</span><span class="chip">FullCalendar</span><span class="chip">Web Speech API</span><span class="chip"><span class="en">Documentation and user training</span><span class="ar">التوثيق وتدريب المستخدمين</span></span></div></div>
+<p class="muted"><span class="en">Languages: Arabic (fluent), English (fluent)</span><span class="ar">اللغات: العربية (بطلاقة)، الإنجليزية (بطلاقة)</span></p>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2><span class="en">Experience</span><span class="ar">الخبرة العملية</span></h2>
+<div class="job"><div class="d">2024 – 2026</div><div>
+<h3><span class="en">IT Technician, Smart College</span><span class="ar">فني تكنولوجيا المعلومات، Smart College</span></h3><div class="muted"><span class="en">Tyre, Lebanon</span><span class="ar">صور، لبنان</span></div>
+<ul><li><span class="en">Managed IT systems and the end-user environment for 100+ employees, resolving 95% of issues on first contact.</span><span class="ar">أدرت الأنظمة وبيئة المستخدمين لأكثر من 100 موظف، وحللت 95% من المشكلات من أول اتصال.</span></li>
+<li><span class="en">Deployed, configured and administered workstations, software and network systems.</span><span class="ar">جهّزت وضبطت وأدرت أجهزة وبرامج وأنظمة شبكية.</span></li>
+<li><span class="en">Worked with other teams to improve IT processes, reducing downtime by 15%.</span><span class="ar">عملت مع فرق أخرى لتحسين العمليات التقنية، فانخفض زمن التوقف بنسبة 15%.</span></li>
+<li><span class="en">Helped roll out new systems and trained staff to adopt them.</span><span class="ar">ساهمت في إطلاق أنظمة جديدة وتدريب الموظفين عليها.</span></li></ul></div></div>
+<div class="job"><div class="d"><span class="en">2026, 5 months</span><span class="ar">2026، خمسة أشهر</span></div><div>
+<h3><span class="en">Internet Technician</span><span class="ar">فني إنترنت</span></h3><div class="muted"><span class="en">Lebanon</span><span class="ar">لبنان</span></div>
+<ul><li><span class="en">Installed, configured and maintained internet and network equipment at customer sites.</span><span class="ar">ركّبت وضبطت وصنت معدات الإنترنت والشبكات في مواقع العملاء.</span></li>
+<li><span class="en">Deployed MikroTik routers and configured PPPoE and Ubiquiti / PowerBeam wireless links.</span><span class="ar">نشرت راوترات ميكروتك وضبطت PPPoE ووصلات Ubiquiti / PowerBeam اللاسلكية.</span></li>
+<li><span class="en">Diagnosed and fixed connectivity, signal and network issues on-site.</span><span class="ar">شخّصت وأصلحت مشاكل الاتصال والإشارة والشبكة في الموقع.</span></li></ul></div></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2><span class="en">Projects</span><span class="ar">المشاريع</span></h2>
+<div class="proj big"><h3><span class="en">Smart College network renovation</span><span class="ar">تجديد شبكة Smart College</span></h3>
+<p><span class="en">I led the full renovation of the college network, from planning to final cleanup. It covered three buildings, with switches serving the rooms in each one and every building linked back to the server room.</span><span class="ar">قدت تجديد شبكة الكلية بالكامل، من التخطيط حتى التنظيف النهائي. شمل المشروع ثلاثة مبانٍ، مع سويتشات تخدم الغرف في كل مبنى، وربط كل مبنى بغرفة الخوادم.</span></p>
+<ul><li><span class="en">Network planning and deployment, switch installation and configuration</span><span class="ar">تخطيط الشبكة ونشرها، وتركيب السويتشات وضبطها</span></li>
+<li><span class="en">Rack and cabinet installation, structured cabling, cable labeling and management</span><span class="ar">تركيب الخزائن، والكابلات المهيكلة، وترقيم الكابلات وتنظيمها</span></li>
+<li><span class="en">Equipment organization and overall infrastructure optimization</span><span class="ar">تنظيم المعدات وتحسين البنية التحتية بشكل عام</span></li></ul>
+<div class="tags"><span>Cisco</span><span><span class="en">Switching</span><span class="ar">سويتشات</span></span><span><span class="en">Structured cabling</span><span class="ar">كابلات مهيكلة</span></span></div></div>
+<div class="proj"><h3><span class="en">Local AI assistant</span><span class="ar">مساعد ذكاء اصطناعي محلي</span></h3>
+<p><span class="en">A secure, authenticated productivity app that runs a local language model, schedules tasks on a calendar and responds to voice commands hands-free.</span><span class="ar">تطبيق إنتاجية آمن بنظام تسجيل دخول، يشغّل نموذج لغة محليًا، ويجدول المهام على تقويم، ويستجيب للأوامر الصوتية دون استخدام اليدين.</span></p>
+<div class="tags"><span>Ollama</span><span>FullCalendar</span><span>Web Speech API</span></div></div>
+</div></section>
+
+<section><div class="wrap two">
+<div><h2><span class="en">Certifications</span><span class="ar">الشهادات</span></h2>
+<div class="cert">Cisco Certified Network Associate (CCNA)</div><div class="cert">CyberOps Associate</div><div class="cert">Network Security Fundamentals</div>
+<p class="muted" style="margin-top:12px">Cisco Networking Academy</p></div>
+<div><h2><span class="en">Education</span><span class="ar">التعليم</span></h2>
+<h3><span class="en">B.Sc. in Information Technology</span><span class="ar">بكالوريوس في تكنولوجيا المعلومات</span></h3>
+<p class="muted"><span class="en">Lebanese International University (LIU), Tyre. Graduated 2025.</span><span class="ar">الجامعة اللبنانية الدولية (LIU)، صور. تخرجت عام 2025.</span></p></div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+<h2><span class="en">Let’s work together</span><span class="ar">لنعمل معًا</span></h2>
+<p class="muted" style="max-width:56ch"><span class="en">Hiring for an IT role, or need a network installed or fixed? Send me a message and I will reply as soon as I can.</span><span class="ar">تبحث عن موظف تقنية، أو تحتاج إلى تركيب شبكة أو إصلاحها؟ راسلني وسأرد في أقرب وقت.</span></p>
+<div style="margin-top:20px">
+<a class="row" href="mailto:hswaidan02@gmail.com"><span class="k"><span class="en">Email</span><span class="ar">البريد</span></span><b>hswaidan02@gmail.com</b></a>
+<a class="row" href="tel:+96181979231"><span class="k"><span class="en">Phone</span><span class="ar">الهاتف</span></span><b dir="ltr">+961 81 979 231</b></a>
+<a class="row" href="https://www.linkedin.com/in/hasan-swaidan-a52503248" target="_blank" rel="noopener"><span class="k">LinkedIn</span><b>hasan-swaidan</b></a>
+</div></div></section>
+</main>
+<footer><div class="wrap"><span class="en">© 2026 Hasan Swaidan · Tyre, Lebanon</span><span class="ar">© 2026 حسن سويدان · صور، لبنان</span></div></footer>
+
+<script>
+(function(){
+var root=document.documentElement,btn=document.getElementById('lang');
+function setLang(l){
+root.lang=l;root.dir=l==='ar'?'rtl':'ltr';
+btn.textContent=l==='ar'?'English':'عربي';
+document.title=l==='ar'?'حسن سويدان – أخصائي تكنولوجيا المعلومات':'Hasan Swaidan – IT Specialist | Networking, Systems & Infrastructure';
+try{localStorage.setItem('lang',l)}catch(e){}
+}
+var l='en';try{l=localStorage.getItem('lang')||'en'}catch(e){}
+setLang(l==='ar'?'ar':'en');
+btn.addEventListener('click',function(){setLang(root.lang==='ar'?'en':'ar')});
+})();
+</script>
+</body>
+</html>
